@@ -105,6 +105,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1px;
+gap: 15px;
 }
 
 .hive-caption {
@@ -156,7 +157,7 @@ body {
   font-size: 18px;
   font-family: anheim;
   margin: 0 5%;
-  padding: 0 15px;
+  padding: 15px;
   text-align: justify;
 }
 
