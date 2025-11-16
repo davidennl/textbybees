@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Domine-bold";
+    src: url("../fonts/Domine-Bold.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Domine-Bold.eot?#iefix") format("embedded-opentype"), /* IE6–IE8 */
+         url("../fonts/Domine-Bold.woff2") format("woff2"), /* Super modern browsers */
+         url("../fonts/Domine-Bold.woff") format("woff"), /* Modern browsers */
+         url("../fonts/Domine-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+         url("../fonts/Domine-Bold.svg#Domine-Bold") format("svg"); /* Legacy iOS */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Domine";
+    src: url("../fonts/Domine-Regular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Domine-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("../fonts/Domine-Regular.woff2") format("woff2"), /* Super modern browsers */
+         url("../fonts/Domine-Regular.woff") format("woff"), /* Modern browsers */
+         url("../fonts/Domine-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+         url("../fonts/Domine-Regular.svg#Domine") format("svg"); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-image: url("./imagesarchive/background-book.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: 'Domine', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: auto;  
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5%;
+    padding: 2%;
+    min-height: 80vh;
+    border-radius: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 2%;
+    width: 15vw;
+    height: 25vw;
+    max-width: 150px;
+    max-height: 250px;
+    align-items: center;
+    justify-items: center;
+    border: dashed 2px white;
+    border-radius: 10px;
+}
+
+.items img {
+    height: 70%;
+    width: 90%;
+    padding: 5%;
+    overflow: hidden;
+}
+
+.text {
+    font-size: 100%;
+    max-width: 80%;
+    text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.terug-wrapper {
+  position: relative;
+  height: 58px;
+  width: 84px;
+  left: 35px;
+  top: 35px;
+  z-index: 6;
+  background: white;
+  border-radius: 10px;
+  border: dashed #dca 1px;
+}
+
+.terug, .terug-hover {
+    position: absolute;
+    left: 10%;
+    top: -35%;
+    height: 100px;
+    width: 150px;
+}
+
+.terug img, .terug-hover img {
+    height: 100px;
+    width: auto;
+}
+
+.terug-hover img {
+    display: none;
+}
+
+.terug-wrapper:hover {
+    border: dashed black 1px;
+
+}
+
+.terug-wrapper:hover .terug-hover img,
+.terug-wrapper:focus-within .terug-hover img {
+    display: block;
+}
+
+.terug-wrapper:hover .terug img,
+.terug-wrapper:focus-within .terug img {
+    display: none;
+}
+
+@media (max-width: 650px) {
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+  }
+
+  .items{
+    width: 70vw;
+    height: 116vw;
+    max-width: 300px;
+    max-height: 500px;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: url("../images/background-book.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Book */
+.book-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book {
+    position: relative;
+    width: 25vw;
+    height: calc(25vw * 1.4);
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+    border-radius: 10px;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transform-origin: left;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid #9D8465;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    height: 20vh;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 20vw;
+    padding: 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+i {
+    font-size: 50px;
+    color: gray;
+}
+
+.mobile-overlay {
+  display: none;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.terug-wrapper {
+  position: absolute;
+  height: 58px;
+  width: 84px;
+  left: 35px;
+  top: 35px;
+  z-index: 6;
+  background: white;
+  border-radius: 10px;
+  border: dashed #dca 1px;
+}
+
+.terug, .terug-hover {
+    position: absolute;
+    left: 10%;
+    top: -35%;
+    height: 100px;
+    width: 150px;
+}
+
+.terug img, .terug-hover img {
+    height: 100px;
+    width: auto;
+}
+
+.terug-hover img {
+    display: none;
+}
+
+.terug-wrapper:hover {
+    border: dashed black 1px;
+
+}
+
+.terug-wrapper:hover .terug-hover img,
+.terug-wrapper:focus-within .terug-hover img {
+    display: block;
+}
+
+.terug-wrapper:hover .terug img,
+.terug-wrapper:focus-within .terug img {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+  button {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  i, button img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    z-index: 89;
+  } 
+}

@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Domine-bold";
+    src: url("../fonts/Domine-Bold.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Domine-Bold.eot?#iefix") format("embedded-opentype"), /* IE6–IE8 */
+         url("../fonts/Domine-Bold.woff2") format("woff2"), /* Super modern browsers */
+         url("../fonts/Domine-Bold.woff") format("woff"), /* Modern browsers */
+         url("../fonts/Domine-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+         url("../fonts/Domine-Bold.svg#Domine-Bold") format("svg"); /* Legacy iOS */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Domine";
+    src: url("../fonts/Domine-Regular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Domine-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("../fonts/Domine-Regular.woff2") format("woff2"), /* Super modern browsers */
+         url("../fonts/Domine-Regular.woff") format("woff"), /* Modern browsers */
+         url("../fonts/Domine-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+         url("../fonts/Domine-Regular.svg#Domine") format("svg"); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  align-items: center;
+  font-family: 'Domine', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.caption {
+	margin-top: -5px;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    border:  solid 5px midnightblue;
+    width: 400px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    margin: 2% 0;
+}
+
+h1 {
+    font-family: "Domine-Bold";
+    font-size: 60px;
+    margin: 10px 10px;
+    margin: 4% 4% -2% 4%;
+    text-align: center;
+}
+
+.divider {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+p {
+    font-family: anheim;
+    max-width: 90%;
+    margin: 8%;
+    text-align: justify;
+}
+
+.profile {
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+    margin: 0 8% 8% 8%;
+    border: dotted 2px midnightblue;
+    border-radius: 15px;
+}
+
+.addcaption {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caption {
+	margin-top: -5px;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.terug-wrapper {
+  position: absolute;
+  height: 58px;
+  width: 84px;
+  left: 35px;
+  top: 35px;
+  z-index: 6;
+  background: white;
+  border-radius: 10px;
+  border: dashed #dca 1px;
+}
+
+.terug, .terug-hover {
+    position: absolute;
+    left: 10%;
+    top: -35%;
+    height: 100px;
+    width: 150px;
+}
+
+.terug img, .terug-hover img {
+    height: 100px;
+    width: auto;
+}
+
+.terug-hover img {
+    display: none;
+}
+
+.terug-wrapper:hover {
+    border: dashed black 1px;
+
+}
+
+.terug-wrapper:hover .terug-hover img,
+.terug-wrapper:focus-within .terug-hover img {
+    display: block;
+}
+
+.terug-wrapper:hover .terug img,
+.terug-wrapper:focus-within .terug img {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  .divider, .profile {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  body {
+    background-size: auto;
+  }
+
+  .profile-box {
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .profile {
+    width: 80%;
+    height: auto;
+    margin: 0 8% 8% 8%;
+  }
+
+  p {
+    margin: 9%;
+    width: auto;    
+  }
+}

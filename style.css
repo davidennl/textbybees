@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "Domine-bold";
+    src: url("./fonts/Domine-Bold.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/Domine-Bold.eot?#iefix") format("embedded-opentype"), /* IE6–IE8 */
+         url("./fonts/Domine-Bold.woff2") format("woff2"), /* Super modern browsers */
+         url("./fonts/Domine-Bold.woff") format("woff"), /* Modern browsers */
+         url("./fonts/Domine-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+         url("./fonts/Domine-Bold.svg#Domine-Bold") format("svg"); /* Legacy iOS */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Domine";
+    src: url("./fonts/Domine-Regular.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/Domine-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("./fonts/Domine-Regular.woff2") format("woff2"), /* Super modern browsers */
+         url("./fonts/Domine-Regular.woff") format("woff"), /* Modern browsers */
+         url("./fonts/Domine-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+         url("./fonts/Domine-Regular.svg#Domine") format("svg"); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  font-family: 'Domine', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: auto;  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-layout {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  max-width: 40%;
+  padding: 35px 0 35px 0;
+  margin: 0 auto 0 2%;
+	background: white;
+  height: 100%;
+	box-shadow: 0 0 0 2.5px #00006b inset;
+  overflow-y:auto;
+}
+
+.right-column {
+  margin: 0 2% 0 2%;
+  position: fixed;
+  width: 55%;
+  left: 42%;
+  height: 92%;
+  align-content: stretch;
+}
+
+.title-border {
+  padding: 4% 2% 2% 2%;
+  display: flex;
+	flex-direction: column;
+  min-height: 28%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 1em 0;
+  background: white;
+	box-shadow: 0 0 0 2.5px #00006b inset;
+}
+
+.title {
+  display: block;
+  font-size: calc(3vw);
+  max-width: 90%;
+  text-align: center;
+  font-family: "Domine-Bold";
+  color: black;
+}
+
+.topnav {
+	background-color: white;
+  align-items: center;
+  margin: 1%;
+  height: 70%;
+  min-width: 80%;
+}
+
+.topnav a {
+	color: black;
+	text-align: center;
+	padding: 1vw 2vw;
+  margin: 0 1vw;
+	text-decoration: none;
+	font-size: 1vw;
+}
+
+.topnav a:hover {
+	background-color: #DCA;
+	color: black;
+  border-radius: 4px;
+  }
+
+.language {
+  color: black;
+  border: dotted 3px #DCA;
+  border-radius: 4px;
+}
+
+.hive-wrapper {
+  display: flex;
+  min-height: 69.5%;
+	flex-direction: column;
+  align-items: center;
+  background: white;
+	box-shadow: 0 0 0 2.5px #00006b inset;
+}
+
+.hives {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 5%;
+  gap: auto;
+}
+
+.hive-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hives img {
+  object-fit: contain;
+  margin: -1em 0 0.5em 0;
+  border: dashed 1px black;
+  border-radius: 4px;
+  width: 75%;
+  cursor: pointer;
+}
+
+.hives a:hover {
+	background-color: #DCA;
+	color: black;
+  border-radius: 4px;
+}
+
+#logo {
+  max-width: 85%;
+  align-items: center;
+  height: auto;
+}
+
+.main-text {
+  font-size: clamp(14px, 1vw, 25px);
+  font-family: anheim;
+  margin: 0 5%;
+  padding: 15px;
+  text-align: justify;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.caption {
+	margin-top: -5px;
+	font-size: 12px;
+	text-align: justify;
+}
+
+a.footnote {
+  text-decoration:none;
+  cursor: pointer;
+  background-color: white;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-right: 2px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+} 
+
+a.footnote span {
+    cursor: pointer;
+  z-index: -1;
+  opacity: 0;
+  position: fixed;
+  left: 15px; 
+  bottom: 20px;
+  margin-left: 0px;
+  margin-right: 14px;
+  padding: 6px 8px;
+  border-radius:4px; 
+  box-shadow: 5px 5px 4px #252323;
+  border:1px solid powderblue;
+  background-color: white;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+a.footnote:hover span {
+  cursor: pointer;
+  z-index: 9;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@media (max-width: 850px) {
+  .page-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-wrapper,
+  .right-column {
+    flex: 1 1 100%;
+    max-width: 95%;
+    margin: 0 0 4% 0;
+  }
+
+  .right-column {
+    position: static;
+    width: 95%;
+  }
+
+  .title-border {
+    height: fit-content;
+  }
+
+  .topnav a {
+    font-size: 12px;
+  }
+  
+  .title {
+    font-size: 30px;
+  }
+
+  .main-text {
+    font-size: 17px;
+  }
+}
