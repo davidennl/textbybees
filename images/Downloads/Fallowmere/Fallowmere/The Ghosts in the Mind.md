@@ -1,0 +1,10 @@
+[[Session Four]]'s Short/Long Rest visions
+
+-  _Bran will find himself in a mortician's office, set up by a couple of large trees. He watches Quentin prepare a body for burial. But the body shrieks and vanishes all of a sudden. Quentin shrugs, and tells Bran not to worry about it. There's another body ready to be embalmed in the cellar. But instead of a body, in the dark basement there's a path into the bowels of the Earth. In the [[Deep Roads|Dark Below]], Bran feels the absence of the Widow for the very first time. (visions)._
+
+- _Caset will speak with the stranger in the pub and his family, all of them having a drink in a forest clearing. The stranger tells Caset she had a great laugh at his face when he realized he'd been pranked. She gives him a choice: either find enough money to support his family and go back to a life of mining in a tiny, boring village. Or, find the secret to [[Viridian]], forge a flawless shield of green-hued steel, and show everyone you were right._
+	- Ketin (dad), Maal (mum), Cobly (brother), Avalo (childhood friend)
+
+-  _Mae will find herself walking through a tunnel of leaves. The smell of apples is heavy, and she realises she's inside a giant apple. Light is at the end of the tunnel. When she reaches the end, Mae realizes she is a miniscule worm inside an apple. [[Special Fairies|Idun]] stands before her, her eyes like the summer sky. She will tell Mae she wants a favour: to make sure the [[Maker Blade]] does not end up in wrong hands. She insists the Gleam cannot have it, and that she wants it instead. (visions)_
+
+-  _Fenni finds herself chasing Fox, who runs off into the bushes. When she finally thinks she sees him, she instead comes face to face with one of the tweens from the [[Goblin Market]](Applewort). Applewort will agree to help her find Fox because they are 'kin'. She'll tell her about their shared eyes, but lament the lack of blue hair. Eventually, they find a familiar place. The fox den where Fenni vaguely remembers spending the first few years of her life. The vixen has a litter of pups lying there, and one of them--at first glance a human child, is instead a goblin baby._

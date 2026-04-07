@@ -1,0 +1,2 @@
+
+The oldest and most powerful State on the continent. Led by an Emperor, and supported by the [[Church|Justiciar Church]], the Empire has stood since recorded history. Its greatest crisis, following [[Reaping Season]], was the [[Fallowmere Rebellion]].

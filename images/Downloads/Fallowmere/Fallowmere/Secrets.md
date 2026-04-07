@@ -1,0 +1,2 @@
+- Eponis is the Patron Fairy of Guardians. He is the first son of the [[Trickster]], and sworn to protect her. His Domain, the [[Fairy Domains|Pale Wood]], holds a portal into her pocket realm.
+	Eponis founded the order of the Blades by altering the shape of all [[Fairies|sprites]].

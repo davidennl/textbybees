@@ -1,0 +1,2 @@
+
+A disease spread by bites from the [[Special Horrors|Bog Horse]]. It turns the sufferer into a ghoul in the span of three days. Bog Rot can be avoided by succeeding on a *DC15 constitution save* after a bite.

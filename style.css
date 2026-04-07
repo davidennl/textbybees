@@ -24,7 +24,7 @@
 }
 
 body {
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/background-bees.jpg");
   background-repeat: no-repeat;
   background-size: auto 100%;
   font-family: 'Domine', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,6 +33,7 @@ body {
 
 * {
   box-sizing: border-box;
+
 }
 
 .page-layout {
@@ -50,17 +51,17 @@ body {
   max-width: 40%;
   padding: 35px 0 35px 0;
   margin: 0 auto 0 2%;
-	background: white;
+	background: rgba(255, 255, 255, 0.9);
   height: 100%;
-	box-shadow: 0 0 0 2.5px #00006b inset;
+	box-shadow: 0 0 0 2.5px #DCA inset;
   overflow-y:auto;
 }
 
 .right-column {
   margin: 0 2% 0 2%;
   position: fixed;
-  width: 55%;
-  left: 42%;
+  width: 20%;
+  right: 0;
   height: 92%;
   align-content: stretch;
 }
@@ -74,8 +75,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 0 1em 0;
-  background: white;
-	box-shadow: 0 0 0 2.5px #00006b inset;
+  background: rgba(255, 255, 255, 1);
+	box-shadow: 0 0 0 2.5px #DCA inset;
 }
 
 .title {
@@ -88,20 +89,23 @@ body {
 }
 
 .topnav {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.9);
   align-items: center;
   margin: 1%;
-  height: 70%;
-  min-width: 80%;
+  margin-bottom: 20px;
+  height: 80%;
+  width: 100%;
+  gap: auto;
 }
 
 .topnav a {
 	color: black;
 	text-align: center;
-	padding: 1vw 2vw;
-  margin: 0 1vw;
+	padding: 2%;
+  height: 90%;
+  margin: 0 0 0 5%;
 	text-decoration: none;
-	font-size: 1vw;
+	font-size: 0.8vw;
 }
 
 .topnav a:hover {
@@ -110,19 +114,13 @@ body {
   border-radius: 4px;
   }
 
-.language {
-  color: black;
-  border: dotted 3px #DCA;
-  border-radius: 4px;
-}
-
 .hive-wrapper {
   display: flex;
   min-height: 69.5%;
 	flex-direction: column;
   align-items: center;
-  background: white;
-	box-shadow: 0 0 0 2.5px #00006b inset;
+  background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 0 2.5px #DCA inset;
 }
 
 .hives {
@@ -185,14 +183,14 @@ body {
 a.footnote {
   text-decoration:none;
   cursor: pointer;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   padding-left: 2px;
   padding-right: 2px;
   margin-right: 2px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 } 
 
 a.footnote span {
@@ -208,11 +206,11 @@ a.footnote span {
   border-radius:4px; 
   box-shadow: 5px 5px 4px #252323;
   border:1px solid powderblue;
-  background-color: white;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 a.footnote:hover span {

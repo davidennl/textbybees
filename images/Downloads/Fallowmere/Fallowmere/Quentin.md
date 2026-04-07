@@ -1,0 +1,1 @@
+A Lumber Realms Mortician, who was killed by the [[Special Horrors|Horror Old Mabel]] after disrespecting her corpse.
