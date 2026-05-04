@@ -86,8 +86,9 @@ body {
 .title {
   display: block;
   font-size: 120px;
+  margin: 0 auto;
   width: 90%;
-  text-align: center;
+  text-align: "center";
   font-family: "Bodoni";
   color: white;
 }
