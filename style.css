@@ -71,8 +71,8 @@ body {
 
 .title-border {
   padding: 0;
-  margin-top: 40px;
   margin: 0 auto;
+  margin-top: 40px;
   display: flex;
 	flex-direction: column;
   min-width: 85%;
