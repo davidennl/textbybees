@@ -28,12 +28,22 @@ body {
   background-repeat: no-repeat;
   background-size: auto 100%;
   font-family: 'Domine', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: auto;  
+  margin: auto;
 }
 
 * {
   box-sizing: border-box;
 
+}
+
+.border {
+  display: block;
+  position: sticky;
+  background: transparent;
+  max-width: 100vw;
+  height: 100%;
+  border: midnightblue 10px solid;
+  overflow: hidden;
 }
 
 .page-layout {
@@ -48,59 +58,52 @@ body {
 }
 
 .page-wrapper {
-  max-width: 35%;
-  padding: 35px 0 35px 0;
+  max-width: 40%;
+  padding: 10px 0 10px 0;
   margin: 0 auto 0 2%;
-	background: rgba(255, 255, 255, 0.9);
+	background: midnightblue;
   height: 100%;
-	box-shadow: 0 0 0 2.5px #DCA inset;
-  overflow-y:auto;
-}
-
-.right-column {
-  margin: 0 2% 0 2%;
-  position: fixed;
-  width: 25%;
-  right: 2%;
-  height: 92%;
+	box-shadow: 0 0 0 8.5px white inset;
+  overflow-y: auto;
   justify-items: center;
+  min-width: 550px;
 }
 
 .title-border {
-  padding: 4% 2% 2% 2%;
+  padding: 0;
+  margin-top: 40px;
   display: flex;
 	flex-direction: column;
-  min-height: 28%;
-  max-width: 100%;
+  min-width: 85%;
+  max-width: 85%;
   justify-content: center;
   align-items: center;
-  margin: 0 0 1em 0;
-  background: rgba(255, 255, 255, 1);
-	box-shadow: 0 0 0 2.5px #DCA inset;
+  height: fit-content;
+  background: midnightblue;
+  border: 2px dashed white;
 }
 
 .title {
   display: block;
-  font-size: calc(3vw);
-  max-width: 90%;
+  font-size: 120px;
+  width: 90%;
   text-align: center;
-  font-family: "Domine-Bold";
-  color: black;
+  font-family: "Bodoni";
+  color: white;
 }
 
 .topnav {
-	background-color: rgba(255, 255, 255, 0.9);
+  display: block;
+	background-color: midnightblue;
   align-items: center;
-  margin: 1%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  height: 100;
-  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
   gap: auto;
 }
 
 .topnav a {
-	color: black;
+	color: white;
 	text-align: center;
 	padding: 2% 4%;
   height: 25px;
@@ -110,8 +113,8 @@ body {
 }
 
 .topnav a:hover {
-  border: 2px #DCA dashed;
-	color: midnightblue;
+  border: 2px white dashed;
+	color: white;
   }
 
 .hive-wrapper {
@@ -119,8 +122,8 @@ body {
   min-height: 69.5%;
 	flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.9);
-	box-shadow: 0 0 0 2.5px #DCA inset;
+  background: midnightblue;
+	box-shadow: 0 0 0 2.5px white inset;
 }
 
 .hives {
@@ -139,19 +142,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 
 .hives img {
   object-fit: contain;
   margin: -1em 0 0.5em 0;
-  border: dashed 1px black;
+  border: dashed 1px white;
   border-radius: 4px;
   width: 75%;
   cursor: pointer;
+  padding: 2%;
 }
 
 .hives a:hover {
-	color: black;
+	color: white;
   border-radius: 4px;
   height: 120%;
   margin: -10% 0 0 0;
@@ -164,11 +169,12 @@ body {
 }
 
 .main-text {
-  font-size: clamp(14px, 1vw, 25px);
+  font-size: 24px;
   font-family: anheim;
   margin: 0 5%;
   padding: 15px;
   text-align: justify;
+  color: white;
 }
 
 .right-text {
@@ -184,7 +190,7 @@ body {
 a.footnote {
   text-decoration:none;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: midnightblue;
   padding-left: 2px;
   padding-right: 2px;
   margin-right: 2px;
@@ -207,7 +213,7 @@ a.footnote span {
   border-radius:4px; 
   box-shadow: 5px 5px 4px #252323;
   border:1px solid powderblue;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: midnightblue;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;

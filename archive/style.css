@@ -24,22 +24,22 @@
 }
 
 body {
-  background-image: url("./imagesarchive/background-book.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  background: midnightblue;
+  height: 100vh;
+  width: 100vw;
   font-family: 'Domine', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: auto;  
+  border: solid white 10px;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 5%;
+    background-color: transparent;
+    margin-top: 80px;
     padding: 2%;
     min-height: 80vh;
-    border-radius: 15px;
 }
 
 .items {
@@ -49,17 +49,18 @@ body {
     margin: 2%;
     width: 15vw;
     height: 25vw;
+    padding: 10px;
     max-width: 150px;
     max-height: 250px;
     align-items: center;
     justify-items: center;
-    border: dashed 2px white;
+    border: dashed 5px white;
     border-radius: 10px;
 }
 
 .items img {
     height: 70%;
-    width: 90%;
+    width: 80%;
     padding: 5%;
     overflow: hidden;
 }
@@ -67,6 +68,7 @@ body {
 .text {
     font-size: 100%;
     max-width: 80%;
+    height: fit-content;
     text-align: center;
 }
 
@@ -75,23 +77,23 @@ body {
 }
 
 .terug-wrapper {
-  position: relative;
+  position: absolute;
   height: 58px;
   width: 84px;
   left: 35px;
   top: 35px;
   z-index: 6;
-  background: white;
+  background: midnightblue;
   border-radius: 10px;
-  border: dashed #dca 1px;
+  border: solid white 5px;
 }
 
 .terug, .terug-hover {
     position: absolute;
-    left: 10%;
-    top: -35%;
-    height: 100px;
-    width: 150px;
+    left: 4%;
+    top: -47%;
+    height: 200px;
+    width: 200px;
 }
 
 .terug img, .terug-hover img {
@@ -104,9 +106,10 @@ body {
 }
 
 .terug-wrapper:hover {
-    border: dashed black 1px;
+    border: dashed white 5px;
 
 }
+
 
 .terug-wrapper:hover .terug-hover img,
 .terug-wrapper:focus-within .terug-hover img {
