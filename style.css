@@ -25,8 +25,9 @@
 
 body {
   background-image: url("./images/background-bees.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-position: center;
   font-family: 'Domine', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: auto;
 }
@@ -71,9 +72,7 @@ body {
 
 .title-border {
   padding: 0;
-  margin-left: 0;
-  margin-right: auto;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
   display: flex;
 	flex-direction: column;
   min-width: 85%;
@@ -90,7 +89,7 @@ body {
   font-size: 120px;
   margin: 0 auto;
   width: 90%;
-  text-align: "center";
+  text-align: center;
   font-family: "Bodoni";
   color: white;
 }
