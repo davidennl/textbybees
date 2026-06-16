@@ -236,18 +236,20 @@ a.footnote:hover span {
   .page-layout {
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
 
-  .page-wrapper,
-  .right-column {
+  .page-wrapper {
     flex: 1 1 100%;
-    max-width: 95%;
-    margin: 0 0 4% 0;
+    margin: 0;
+    max-width: 100%;
+    min-width: 100%;
+    box-shadow: 0 0 0 2.5px white inset;
   }
 
   .right-column {
     position: static;
-    width: 95%;
+    width: 90%;
   }
 
   .title-border {
